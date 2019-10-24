@@ -1,31 +1,38 @@
+import java.util.Scanner;
 
-public class P236_OrigenesAjedrez {
+public class Ejercicio_5 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		int granos = 0;
-		int multiple = 0;
-		int casillas = 0;
-		
-		do {
-			
-			if (granos != 0 && multiple != 0 && casillas != 0) {
-				
-			
-			for (int i = 0; i < casillas; i++) {
-				
-				
-				
-			}
-			
-			
-			
-			}
-			
-		} while (granos != 0 && multiple != 0 && casillas != 0);
-		
-		
+
+		 boolean salir=false;
+        Scanner in=new Scanner(System.in);
+         
+        long i1, i2, i3, r, anterior, casilla;
+        do
+	    {
+		i1 = in.nextInt();
+		i2 = in.nextInt();
+		i3 = in.nextInt();
+		in.nextLine();
+             
+		salir= (i1==0 && i2==0 && i3==0);
+		if (!salir)
+		    {
+			casilla=i1;
+			anterior=i1;
+			r=casilla;
+			for (int i=2; i<=i3; i++)
+			    {
+				casilla=anterior*i2;
+				r+=casilla;
+				anterior=casilla;
+			    }
+			System.out.println(r);
+		    }
+ 
+	    } while (!salir);
 		
 	}
 
