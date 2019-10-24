@@ -10,11 +10,18 @@ public class P236_OrigenesAjedrez {
 		
 		do {
 			
+			if (granos != 0 && multiple != 0 && casillas != 0) {
+				
+			
+			for (int i = 0; i < casillas; i++) {
+				
+				
+				
+			}
 			
 			
 			
-			
-			
+			}
 			
 		} while (granos != 0 && multiple != 0 && casillas != 0);
 		
